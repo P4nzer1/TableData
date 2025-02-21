@@ -3,8 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 0 3rem;
+    padding: 0 3rem 4rem;
 }
 
 .table {
@@ -48,19 +47,11 @@
 tr {
     border: 1px solid $lightGrey;
 }
-@media (max-width: 1200px) {
-    .conteiner {
-        height: 110vh;
-        padding: 0 3rem;
-    }
-}
-
-
 
 @media (max-width: 768px) {
     .conteiner {
         height: 85vh;
-        padding: 0 3rem;
+        padding: 0 3rem ;
     }
 
     .table {
