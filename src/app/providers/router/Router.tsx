@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 
-import Layout from "@/pages/Layout/Layout";
+import { Layout } from "@/pages/Layout";
 import HomeLazy from "@/pages/Home/Home.lazy";
 
 

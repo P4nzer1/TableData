@@ -1,0 +1,2 @@
+export { TableDescriptions } from "./TableDescriptions";
+

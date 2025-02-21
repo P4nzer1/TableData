@@ -1,0 +1,42 @@
+.conteiner {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem 4rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $lightGrey;
+}
+
+tr {
+    border: 1px solid $lightGrey;
+}
+
+@media (max-width: 768px) {
+    .conteiner {
+        height: 85vh;
+        padding: 0 3rem ;
+    }
+
+    .table {
+        border-collapse: collapse;
+        border: 1px solid #ddd;        
+    }
+}
+
+@media (max-width: 480px) {
+
+    .conteiner {
+        height: 70vh;
+        padding: 0 3rem;
+    }
+
+    .table {
+        border-collapse: collapse;
+        border: 1px solid #ddd;        
+    }
+}
