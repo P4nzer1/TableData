@@ -1,0 +1,115 @@
+.conteiner {
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 3rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid $lightGrey;
+}
+
+.headers th,
+.descriptions td {
+    padding: 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.headers th {
+    font-size: 1.3rem;
+    background: $tableHeader;
+}
+
+.userinfo {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.usericon {
+    color: $pink;
+    margin: 1rem 1rem; 
+}
+
+.userdetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.email {
+    font-size: 0.8rem;
+    padding-top: 0.5rem;
+}
+
+tr {
+    border: 1px solid $lightGrey;
+}
+@media (max-width: 1200px) {
+    .conteiner {
+        height: 110vh;
+        padding: 0 3rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .conteiner {
+        height: 85vh;
+        padding: 0 3rem;
+    }
+
+    .table {
+        border-collapse: collapse;
+        border: 1px solid #ddd;        
+    }
+
+    .headers th,
+    .descriptions td {
+        padding: 1rem;
+        text-align: left;
+        font-size: 0.8rem;
+    }
+
+    .headers th {
+        font-size: 1.1rem;
+    }
+
+    .email {
+        font-size: 0.6rem;
+        padding-top: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .conteiner {
+        height: 70vh;
+        padding: 0 3rem;
+    }
+
+    .table {
+        border-collapse: collapse;
+        border: 1px solid #ddd;        
+    }
+
+    .headers th,
+    .descriptions td {
+        padding: 0.8rem;
+        text-align: left;
+        font-size: 0.6rem;
+    }
+
+    .headers th {
+        font-size: 0.9rem;
+    }
+
+    .email {
+        font-size: 0.5rem;
+        padding-top: 0.2rem;
+    }
+}
