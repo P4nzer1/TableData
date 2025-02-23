@@ -1,1 +1,0 @@
-export { User } from "./lib/types";

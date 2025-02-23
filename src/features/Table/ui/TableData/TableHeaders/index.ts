@@ -1,1 +1,0 @@
-export { TableHeaders } from "./TableHeaders";

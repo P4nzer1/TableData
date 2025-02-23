@@ -1,2 +1,0 @@
-export { TableData } from "./TableData";
-
