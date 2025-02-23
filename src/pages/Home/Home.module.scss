@@ -1,35 +1,27 @@
 .h1 {
-    color: $white;
     padding: 2rem 3rem 0 ;
-    font-size: 3rem;
 }
 
-.div {
-    color: $lightGrey;
+.p {
     padding: 1rem 3rem 3rem ;
-    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
     .h1 {
         padding: 2rem 3rem 0 ;
-        font-size: 2rem;
     }
     
-    .div {
+    .p {
         padding: 1rem 3rem 0 ;
-        font-size: 0.8rem;
     }
 }
 
 @media (max-width: 480px) {
     .h1 {
         padding: 2rem 3rem 0 ;
-        font-size: 1rem;
     }
     
-    .div {
+    .p {
         padding: 1rem 3rem 0 ;
-        font-size: 0.6rem;
     }
 }

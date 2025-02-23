@@ -1,10 +1,14 @@
-import UserTableWidget from "@/widgets/TableDataWidget/ui/TableDataWidget";
+import { TableData } from "@/features/Table/ui/TableData";
+import styles from './Home.module.scss'
+import { Text } from "@/shared/ui/Text";
 
-const Home = () => {
+export const Home = () => {
     return (
-        <div >
-            <UserTableWidget />
-        </div>
+        <>
+            <Text className={styles.h1} as="h1" size="xl">Таблица пользователей</Text>
+            <Text className={styles.p} color="grey" size="m">User Task table for effective planning</Text>
+            <TableData />
+        </>
     );
 };
 

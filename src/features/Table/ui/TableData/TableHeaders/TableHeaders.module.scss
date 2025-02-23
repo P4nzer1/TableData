@@ -1,0 +1,21 @@
+.headers th {
+    padding: 1.5rem;
+}
+
+.headers th {
+    background: $tableHeader;
+}
+
+@media (max-width: 768px) {
+
+    .headers th {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .headers th {
+        padding: 0.8rem;
+    }
+}
