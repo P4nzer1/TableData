@@ -1,2 +1,0 @@
-export { TableDescriptions } from "./TableDescriptions";
-

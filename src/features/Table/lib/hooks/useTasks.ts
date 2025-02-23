@@ -1,18 +1,19 @@
 import { useEffect, useState } from 'react';
 
-import { User } from '@/entities/User/lib/types';
-import { fetchUsersTasks } from '../../api/fetchUsersTaskApi';
+import { User } from '@/entities/User';
+import { fetchTasksApi } from '../../api';
 
-export const useUsersWithTasks = () => {
-    const [usersWithTasks, setUsersWithTasks] = useState<User[]>([]);
+export const useTasks = () => {
+    const [tasks, setTasks] = useState<User[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
 
     useEffect(() => {
+
         const loadData = async () => {
             try {
-                const usersWithTasksData = await fetchUsersTasks();
-                setUsersWithTasks(usersWithTasksData);
+                const tasksData = await fetchTasksApi();
+                setTasks(tasksData);
             } catch (error) {
                 setError('Ошибка загрузки данных');
             } finally {
@@ -22,5 +23,5 @@ export const useUsersWithTasks = () => {
         loadData();
     }, []);
 
-    return { usersWithTasks, loading, error };
+    return { tasks, loading, error };
 };

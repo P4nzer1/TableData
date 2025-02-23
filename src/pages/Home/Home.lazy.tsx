@@ -1,5 +1,3 @@
 import { lazy } from "react";
 
-const HomeLazy = lazy(() => import("./Home"));
-
-export default HomeLazy;
+export const HomeLazy = lazy(() => import("./Home"));

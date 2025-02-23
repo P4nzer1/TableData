@@ -1,4 +1,4 @@
-import { createApi } from "./helpers";
+import { createApi } from "./helpers/createApi";
 
 export const BASE_URL = 'https://jsonplaceholder.typicode.com/';
 
